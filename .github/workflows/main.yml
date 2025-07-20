@@ -25,8 +25,9 @@ jobs:
 
       - name: Sync Website to S3
         run: |
-          aws s3 sync website/ s3://${{ secrets.AWS_S3_BUCKET }}/ --delete
+          aws s3 sync website/ s3://${{ secrets.S3_BUCKET_NAME }}/ --delete
 
       - name: Show Deployment Logs
         run: |
-          echo "✅ Deployed Fitness App website to S3 bucket: ${{ secrets.AWS_S3_BUCKET }}"
+          echo "✅ Deployed Fitness App website to S3 bucket: ${{ secrets.S3_BUCKET_NAME }}"
+
