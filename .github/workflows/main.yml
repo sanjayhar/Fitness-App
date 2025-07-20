@@ -22,7 +22,9 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync Website to S3
-        run: aws s3 sync website/ s3://${{ secrets.AWS_S3_BUCKET }}/ --delete
+        run: |
+          aws s3 sync website/ s3://${{ secrets.AWS_S3_BUCKET }}/ --delete
 
       - name: Show Deployment Logs
-        run: echo "✅ Deployed Fitness App website to S3 bucket: ${{ secrets.AWS_S3_BUCKET }}"
+        run: |
+          echo "✅ Deployed Fitness App website to S3 bucket: ${{ secrets.AWS_S3_BUCKET }}"
