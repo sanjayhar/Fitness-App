@@ -30,4 +30,3 @@ jobs:
       - name: Show Deployment Logs
         run: |
           echo "✅ Deployed Fitness App website to S3 bucket: ${{ secrets.S3_BUCKET_NAME }}"
-
