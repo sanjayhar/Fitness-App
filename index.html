@@ -2,63 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🏋️‍♂️ Gym Fitness Tracker</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🏅 EliteFit Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>🏋️‍♂️ <span class="fancy-title">FitTrack Gym</span></h1>
-    <p class="subtitle">Your personal fitness companion at the gym</p>
-  </header>
   <main>
-    <section class="form-section">
-      <form id="exerciseForm">
-        <div class="form-group">
-          <label for="name">👤 Name:</label>
-          <input type="text" id="name" required placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label for="exercise">💪 Exercise:</label>
-          <select id="exercise">
-            <option value="pushups">Pushups</option>
-            <option value="squats">Squats</option>
-            <option value="plank">Plank</option>
-            <option value="pullups">Pull-ups</option>
-            <option value="lunges">Lunges</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="sets">🔢 Sets:</label>
-          <input type="number" id="sets" min="1" max="10" value="3">
-        </div>
-        <div class="form-group">
-          <label for="reps">🏆 Reps/Duration (sec):</label>
-          <input type="number" id="reps" min="1" max="100" value="10">
-        </div>
-        <div class="form-group">
-          <label for="days">📅 Days:</label>
-          <input type="number" id="days" min="1" max="30" value="7">
-        </div>
-        <button type="submit" class="submit-btn">Show Outcome</button>
-      </form>
-    </section>
-    <section id="result" class="result-section"></section>
-    <section class="tips-section">
-      <h2>🔥 Fitness Tips</h2>
-      <ul>
-        <li>Stay hydrated 💧</li>
-        <li>Warm up before every session 🏃‍♂️</li>
-        <li>Track your progress 📈</li>
-        <li>Rest is as important as training 😴</li>
-        <li>Eat healthy for best results 🥗</li>
-      </ul>
-    </section>
+    <div class="explorer-container">
+      <div id="workout-section" class="workout-section fade-in">
+        <!-- Dynamic content injected by app.js -->
+      </div>
+      <div class="nav-buttons">
+        <button id="prevBtn">⬅️ Previous</button>
+        <button id="nextBtn">Next ➡️</button>
+      </div>
+    </div>
   </main>
   <footer>
-    <p>© 2025 FitTrack Gym. Powered by <span class="highlight">CI/CD & AWS S3</span></p>
+    <p>© 2025 EliteFit Explorer. Designed for gym enthusiasts! | Powered by CI/CD & AWS S3</p>
   </footer>
   <script src="app.js"></script>
 </body>
