@@ -1,27 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - FitTrack Gym</title>
+  <title>Contact Us - FitTrack Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { margin: 0; font-family: 'Open Sans', sans-serif; background: #f7f7f7; }
+    .navbar { display: flex; justify-content: space-between; background: #111; padding: 1rem 2rem; color: white; }
+    .navbar .logo { font-family: 'Montserrat'; font-size: 1.8rem; font-weight: 700; }
+    .navbar .logo span { color: #ff8c00; }
+    .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+    .nav-links a { color: white; text-decoration: none; font-weight: 600; }
+    .nav-links a:hover { color: #ff8c00; }
+    .contact { max-width: 700px; margin: 3rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .contact h1 { font-family: 'Montserrat'; text-align: center; margin-bottom: 1.5rem; }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+    .form-group input, .form-group textarea { width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc; }
+    .submit-btn { width: 100%; background: #ff8c00; color: white; font-weight: bold; border: none; padding: 1rem; font-size: 1.1rem; border-radius: 8px; cursor: pointer; margin-top: 1rem; }
+    .submit-btn:hover { background: #ff7000; }
+    footer { background: #111; color: white; text-align: center; padding: 1.5rem; font-size: 0.9rem; margin-top: 3rem; }
+  </style>
 </head>
 <body>
-  <header class="page-header">
-    <h1>Contact Us</h1>
-  </header>
-  <section class="contact">
-    <form action="#">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <p>Call us: +91 98765 43210</p>
-    <p>Email: info@fittrackgym.com</p>
-  </section>
-  <footer>
-    <p>&copy; 2025 FitTrack Gym. All rights reserved.</p>
-  </footer>
+
+<nav class="navbar">
+  <div class="logo">FitTrack <span>Gym</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="contact">
+  <h1>Contact Us</h1>
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">👤 Your Name:</label>
+      <input type="text" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">📧 Email:</label>
+      <input type="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">💬 Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 FitTrack Gym | Connect with us | Powered by AWS CI/CD</p>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event){
+  event.preventDefault();
+  alert("Thank you! We'll get back to you soon.");
+});
+</script>
+
 </body>
 </html>
-
