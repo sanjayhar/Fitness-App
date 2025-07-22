@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: Deploy Fitness Website to AWS S3
+=======
+name: Deploy Fitness App to AWS S3
+>>>>>>> 53725dd (Professional fitness website with CI/CD pipeline)
 
 on:
   push:
@@ -21,7 +25,12 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync Website to S3
+<<<<<<< HEAD
         run: aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/ --exclude \".git/*\" --exclude \".github/*\" --delete
 
       - name: Deployment Success
         run: echo \"✅ Deployed to ${{ secrets.AWS_S3_BUCKET }} successfully!\"
+=======
+        run: |
+          aws s3 sync website/ s3://${{ secrets.S3_BUCKET_NAME }}/ --delete
+>>>>>>> 53725dd (Professional fitness website with CI/CD pipeline)
