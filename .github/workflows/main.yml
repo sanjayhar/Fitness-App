@@ -21,7 +21,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync Website to S3
-        run: aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/ --exclude ".git/*" --exclude ".github/*" --delete
+        run: aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/ --exclude \".git/*\" --exclude \".github/*\" --delete
 
-      - name: Success Log
-        run: echo "✅ Deployed FitTrack Gym website to S3!"
+      - name: Deployment Success
+        run: echo \"✅ Deployed to ${{ secrets.AWS_S3_BUCKET }} successfully!\"
