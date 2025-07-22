@@ -28,4 +28,5 @@ jobs:
           aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/ --exclude ".git/*" --exclude ".github/*" --delete
 
       - name: Deployment Complete Message
-        run: echo "✅ Website successfully deployed to S3 bucket: ${{ secrets.AWS_S3_BUCKET }}"
+        run: |
+          echo "✅ Website successfully deployed to S3 bucket: ${{ secrets.AWS_S3_BUCKET }}"
