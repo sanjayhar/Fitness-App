@@ -1,23 +1,48 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - FitTrack Gym</title>
+  <title>About Us - FitTrack Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { margin: 0; font-family: 'Open Sans', sans-serif; background: #f7f7f7; }
+    .navbar { display: flex; justify-content: space-between; background: #111; padding: 1rem 2rem; color: white; }
+    .navbar .logo { font-family: 'Montserrat'; font-size: 1.8rem; font-weight: 700; }
+    .navbar .logo span { color: #ff8c00; }
+    .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+    .nav-links a { color: white; text-decoration: none; font-weight: 600; }
+    .nav-links a:hover { color: #ff8c00; }
+    .about { max-width: 900px; margin: 3rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .about h1 { font-family: 'Montserrat'; text-align: center; margin-bottom: 1.5rem; }
+    .about p { font-size: 1.1rem; line-height: 1.7; }
+    .about img { width: 100%; border-radius: 12px; margin-top: 1.5rem; }
+    footer { background: #111; color: white; text-align: center; padding: 1.5rem; font-size: 0.9rem; margin-top: 3rem; }
+  </style>
 </head>
 <body>
-  <header class="page-header">
-    <h1>About FitTrack Gym</h1>
-    <p>Dedicated to helping you achieve your fitness goals since 2010.</p>
-  </header>
-  <section class="about">
-    <h2>Our Mission</h2>
-    <p>Empowering people to become healthier and stronger with personalized programs and a supportive community.</p>
-    <h2>Our Team</h2>
-    <p>Our certified trainers and nutritionists are here to guide every step of your fitness journey.</p>
-  </section>
-  <footer>
-    <p>&copy; 2025 FitTrack Gym. All rights reserved.</p>
-  </footer>
+
+<nav class="navbar">
+  <div class="logo">FitTrack <span>Gym</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="about">
+  <h1>About FitTrack Gym</h1>
+  <p>At FitTrack Gym, we believe fitness is a journey, not a destination. Established in 2020, we have grown into a dynamic fitness hub that empowers members to achieve their health goals. Our certified trainers, modern equipment, and motivating environment set us apart.</p>
+  <p>With over <strong>100+ group classes every month</strong> and 24/7 open access, we are your ultimate fitness partner. Whether you're a beginner or a pro, our community-driven approach keeps you motivated every step of the way.</p>
+  <img src="images/about-gym.jpg" alt="Our Gym Image">
+</section>
+
+<footer>
+  <p>&copy; 2025 FitTrack Gym | Built for real-time engagement | Powered by AWS CI/CD</p>
+</footer>
+
 </body>
 </html>
