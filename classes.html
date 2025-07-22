@@ -1,34 +1,123 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classes - FitTrack Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Classes | FitTrack Gym</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .classes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .class-card {
+      background: white;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      margin: 1rem;
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .class-card:hover {
+      transform: translateY(-10px);
+    }
+    .class-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .class-card-content {
+      padding: 1.5rem;
+    }
+    .class-card h2 {
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 0;
+      color: #333;
+    }
+    .class-card p {
+      color: #666;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #222;
+      color: white;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .class-card {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="page-header">
-    <h1>Our Classes</h1>
-  </header>
-  <section class="classes">
-    <div class="class">
+
+<header>
+  <h1>Our Classes</h1>
+  <p>Choose your style. Train your way.</p>
+</header>
+
+<section class="classes">
+  <div class="class-card">
+    <img src="images/hiit.jpg" alt="HIIT Blast">
+    <div class="class-card-content">
       <h2>HIIT Blast</h2>
-      <p>High-Intensity Interval Training to burn fat fast.</p>
+      <p>High-Intensity Interval Training to burn fat, boost energy, and build endurance.</p>
     </div>
-    <div class="class">
+  </div>
+
+  <div class="class-card">
+    <img src="images/strength.jpg" alt="Strength Training">
+    <div class="class-card-content">
       <h2>Strength Training</h2>
-      <p>Build muscle and strength under expert guidance.</p>
+      <p>Develop lean muscle and overall strength with our guided weight sessions.</p>
     </div>
-    <div class="class">
+  </div>
+
+  <div class="class-card">
+    <img src="images/yoga.jpg" alt="Yoga Flow">
+    <div class="class-card-content">
       <h2>Yoga Flow</h2>
-      <p>Improve flexibility and mental calmness with Yoga.</p>
+      <p>Calm your mind, improve flexibility, and balance through relaxing yoga flows.</p>
     </div>
-    <div class="class">
+  </div>
+
+  <div class="class-card">
+    <img src="images/zumba.jpg" alt="Zumba Fun">
+    <div class="class-card-content">
       <h2>Zumba Fun</h2>
-      <p>Ditch the workout, join the party with Zumba.</p>
+      <p>Ditch the workout, join the dance party. Burn calories while having fun!</p>
     </div>
-  </section>
-  <footer>
-    <p>&copy; 2025 FitTrack Gym. All rights reserved.</p>
-  </footer>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 FitTrack Gym. All rights reserved.
+</footer>
+
 </body>
 </html>
