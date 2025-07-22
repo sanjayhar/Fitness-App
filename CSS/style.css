@@ -1,4 +1,108 @@
-body { font-family: Arial, sans-serif; background: linear-gradient(#141e30, #243b55); color: white; margin: 0; }
-header { background: #1a1a1a; padding: 20px; text-align: center; }
-nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-section { text-align: center; margin-top: 50px; }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #f23d3d;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  background: url('../images/hero.jpg') no-repeat center/cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 span {
+  color: #f23d3d;
+}
+
+.btn {
+  background: #f23d3d;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.features, .about, .classes, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.feature, .class {
+  background: #fff;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.page-header {
+  background: #111;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+button.btn:hover {
+  background: #c32c2c;
+}
