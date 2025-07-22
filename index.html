@@ -1,112 +1,272 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FitTrack Gym - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">FitTrack <span>Gym</span></div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="classes.html">Classes</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-text">
-      <h1>Transform Your Body <span>Today!</span></h1>
-      <p>Your fitness journey starts here. Join the most energetic gym community.</p>
-      <a href="contact.html" class="btn">Join Now</a>
-    </div>
-  </header>
-
-  <section class="features">
-    <div class="feature">
-      <h2>🏋️‍♂️ Personal Training</h2>
-      <p>Certified trainers to guide your workouts and meal plans.</p>
-    </div>
-    <div class="feature">
-      <h2>💪 Group Classes</h2>
-      <p>Dynamic group sessions from HIIT, Zumba to Yoga every day.</p>
-    </div>
-    <div class="feature">
-      <h2>🔥 24/7 Access</h2>
-      <p>Train at your own pace with 24/7 open gym access.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 FitTrack Gym. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🏋️‍♂️ Gym Fitness Tracker</title>
+  <title>FitTrack Gym - Transform Your Fitness Journey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <meta name="description" content="FitTrack Gym - Transform your body with expert trainers, modern equipment, and vibrant group classes. Join the best fitness community today!">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      padding: 1rem 2rem;
+      color: white;
+    }
+    .navbar .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .navbar .logo span {
+      color: #ff8c00;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #ff8c00;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('images/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      height: 90vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .hero span {
+      color: #ff8c00;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+    .btn {
+      background: #ff8c00;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 2rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #ff7000;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 3rem 0;
+      padding: 0 2rem;
+    }
+    .feature {
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 1rem;
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+    .feature h2 {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    /* Exercise Form */
+    .form-section {
+      background: #fff;
+      margin: 3rem auto;
+      max-width: 700px;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .form-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .submit-btn {
+      width: 100%;
+      background: #ff8c00;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .submit-btn:hover {
+      background: #ff7000;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>🏋️‍♂️ <span class="fancy-title">FitTrack Gym</span></h1>
-    <p class="subtitle">Your personal fitness companion at the gym</p>
-  </header>
-  <main>
-    <section class="form-section">
-      <form id="exerciseForm">
-        <div class="form-group">
-          <label for="name">👤 Name:</label>
-          <input type="text" id="name" required placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label for="exercise">💪 Exercise:</label>
-          <select id="exercise">
-            <option value="pushups">Pushups</option>
-            <option value="squats">Squats</option>
-            <option value="plank">Plank</option>
-            <option value="pullups">Pull-ups</option>
-            <option value="lunges">Lunges</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="sets">🔢 Sets:</label>
-          <input type="number" id="sets" min="1" max="10" value="3">
-        </div>
-        <div class="form-group">
-          <label for="reps">🏆 Reps/Duration (sec):</label>
-          <input type="number" id="reps" min="1" max="100" value="10">
-        </div>
-        <div class="form-group">
-          <label for="days">📅 Days:</label>
-          <input type="number" id="days" min="1" max="30" value="7">
-        </div>
-        <button type="submit" class="submit-btn">Show Outcome</button>
-      </form>
-    </section>
-    <section id="result" class="result-section"></section>
-    <section class="tips-section">
-      <h2>🔥 Fitness Tips</h2>
-      <ul>
-        <li>Stay hydrated 💧</li>
-        <li>Warm up before every session 🏃‍♂️</li>
-        <li>Track your progress 📈</li>
-        <li>Rest is as important as training 😴</li>
-        <li>Eat healthy for best results 🥗</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 FitTrack Gym. Powered by <span class="highlight">CI/CD & AWS S3</span></p>
-  </footer>
-  <script src="app.js"></script>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="logo">FitTrack <span>Gym</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Transform Your Body <span>Today!</span></h1>
+  <p>Join our vibrant community and achieve your fitness goals with expert trainers, group classes, and 24/7 access.</p>
+  <a href="contact.html" class="btn">Join Now</a>
+</section>
+
+<!-- Features -->
+<section class="features">
+  <div class="feature">
+    <h2>🏋️‍♂️ Personal Training</h2>
+    <p>Get personalized workouts and meal plans from certified trainers.</p>
+  </div>
+  <div class="feature">
+    <h2>💪 Group Classes</h2>
+    <p>From HIIT to Yoga, enjoy energetic group sessions daily.</p>
+  </div>
+  <div class="feature">
+    <h2>🔥 24/7 Gym Access</h2>
+    <p>Workout anytime with our 24/7 accessible, modern facility.</p>
+  </div>
+</section>
+
+<!-- Exercise Planner Form -->
+<section class="form-section">
+  <h2>Plan Your Workout</h2>
+  <form id="exerciseForm">
+    <div class="form-group">
+      <label for="name">👤 Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="exercise">💪 Exercise Type:</label>
+      <select id="exercise">
+        <option>Pushups</option>
+        <option>Squats</option>
+        <option>Planks</option>
+        <option>Pull-ups</option>
+        <option>Lunges</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="sets">🔢 Sets:</label>
+      <input type="number" id="sets" value="3" min="1" max="10">
+    </div>
+    <div class="form-group">
+      <label for="reps">🏆 Reps / Duration (sec):</label>
+      <input type="number" id="reps" value="10" min="1" max="100">
+    </div>
+    <div class="form-group">
+      <label for="days">📅 Days Per Week:</label>
+      <input type="number" id="days" value="3" min="1" max="7">
+    </div>
+    <button type="submit" class="submit-btn">Generate Plan</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 FitTrack Gym | Designed for real-time gym engagement | Powered by AWS CI/CD Pipeline</p>
+</footer>
+
+<script>
+document.getElementById('exerciseForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const exercise = document.getElementById('exercise').value;
+  const sets = document.getElementById('sets').value;
+  const reps = document.getElementById('reps').value;
+  const days = document.getElementById('days').value;
+
+  alert(`Hi ${name}! Your ${exercise} workout plan:\n${sets} sets x ${reps} reps for ${days} days per week. Let's go!`);
+});
+</script>
+
 </body>
 </html>
